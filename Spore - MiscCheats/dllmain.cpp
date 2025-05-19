@@ -7,6 +7,7 @@
 #include "SetGameMode.h"
 #include "SkipSpaceTutorial.h"
 #include "GiveInventoryItem.h"
+#include "ChangeEditorModel.h"
 
 void Initialize()
 {
@@ -17,6 +18,7 @@ void Initialize()
 	CheatManager.AddCheat("setGameMode", new SetGameMode());
 	CheatManager.AddCheat("skipSpaceTutorial", new SkipSpaceTutorial());
 	CheatManager.AddCheat("giveInventoryItem", new GiveInventoryItem(), true);
+	CheatManager.AddCheat("changeEditorModel", new ChangeEditorModel());
 }
 
 void Dispose()

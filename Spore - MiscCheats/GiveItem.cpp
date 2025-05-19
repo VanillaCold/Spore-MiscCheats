@@ -25,6 +25,12 @@ void GiveItem::ParseLine(const ArgScript::Line& line)
         selected = mpFormatParser->ParseUInt(args[0]);
     }
 
+    if (!PropManager.HasPropertyList(selected, GroupIDs::SpaceTools))
+    {
+        App::ConsolePrintF("No valid tool specified.");
+        return;
+    }
+
     ToolManager.LoadTool({ selected, 0, 0 }, tool);
 
     auto ammo = clamp(mpFormatParser->ParseInt(args[1]), 0, tool->mMaxAmmoCount);
