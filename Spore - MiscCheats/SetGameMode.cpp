@@ -29,9 +29,11 @@ void SetGameMode::ParseLine(const ArgScript::Line& line)
 const char* SetGameMode::GetDescription(ArgScript::DescriptionMode mode) const
 {
 	if (mode == ArgScript::DescriptionMode::Basic) {
-		return "This cheat does something.";
+		return "Sets the current active game-mode.";
 	}
 	else {
-		return "SetGameMode: Elaborate description of what this cheat does.";
+		string str = "SetGameMode: Sets the active game-mode depending on the mode ID (or name) inputted.";
+		str += "Usage: setGameMode [-name/-id] [gameModeName/gameModeID]";
+		return str.c_str();
 	}
 }

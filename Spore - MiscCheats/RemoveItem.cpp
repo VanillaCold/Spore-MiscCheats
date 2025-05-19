@@ -48,7 +48,10 @@ const char* RemoveItem::GetDescription(ArgScript::DescriptionMode mode) const
 	if (mode == ArgScript::DescriptionMode::Basic) {
 		return "Removes the specified tool from your inventory in the space-stage";
 	}
-	else {
-		return "removeItem: Elaborate description of what this cheat does.";
-	}
+    else {
+        string str = "RemoveItem: This cheat removes a tool based on the name, or hash, inputted.\n";
+        str += "If the -id flag is specified, the input is interpreted as a hash. Otherwise, it is used as a filename.";
+        str += "Usage: removeItem [toolName/toolHash] [-id]";
+        return str.c_str();
+    }
 }

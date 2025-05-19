@@ -46,10 +46,13 @@ void GiveInventoryItem::ParseLine(const ArgScript::Line& line)
 
 const char* GiveInventoryItem::GetDescription(ArgScript::DescriptionMode mode) const
 {
-	if (mode == ArgScript::DescriptionMode::Basic) {
-		return "This cheat does something.";
-	}
-	else {
-		return "GiveInventoryItem: Elaborate description of what this cheat does.";
-	}
+    if (mode == ArgScript::DescriptionMode::Basic) {
+        return "Adds an item to your space stage cargo";
+    }
+    else {
+        string str = "GiveIntenvoryItem: This cheat gives you a cargo item based on the name, or hash, inputted.\n";
+        str += "If the -id flag is specified, the input is interpreted as a hash. Otherwise, it is used as a filename.";
+        str += "Usage: giveInventoryItem [toolName/toolHash] [-id]";
+        return str.c_str();
+    }
 }

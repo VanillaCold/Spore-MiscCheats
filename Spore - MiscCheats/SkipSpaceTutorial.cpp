@@ -70,10 +70,10 @@ void SkipSpaceTutorial::ParseLine(const ArgScript::Line& line)
 const char* SkipSpaceTutorial::GetDescription(ArgScript::DescriptionMode mode) const
 {
 	if (mode == ArgScript::DescriptionMode::Basic) {
-		return "This cheat does something.";
+		return "Skips the space-stage tutoral.";
 	}
 	else {
-		return "SkipSpaceTutorial: Elaborate description of what this cheat does.";
+		return "SkipSpaceTutorial: Skips all currently-active space stage tutorial missions that are mandatory.";
 	}
 }
 

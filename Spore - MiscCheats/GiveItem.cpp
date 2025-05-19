@@ -67,6 +67,9 @@ const char* GiveItem::GetDescription(ArgScript::DescriptionMode mode) const
 		return "Gives you the space-stage tool, based on its tool ID.";
 	}
 	else {
-		return "GiveItem: Elaborate description of what this cheat does.";
+		string str = "GiveItem: This cheat gives you a tool based on the name, or hash, inputted.\n";
+        str += "If the -id flag is specified, the input is interpreted as a hash. Otherwise, it is used as a filename.";
+        str += "Usage: giveitem [toolName/toolHash] [-id]";
+        return str.c_str();
 	}
 }

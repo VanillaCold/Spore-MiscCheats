@@ -17,7 +17,7 @@ void ChangeEditorModel::ParseLine(const ArgScript::Line& line)
 	{
 		// Only send the "is cheater" message when you're in the editor.
 		// since it only works in the editor.
-		MessageManager.MessageSend(CheatManager.kMsgCheatInvoked, nullptr);
+		MessageManager.MessageSend(App::ICheatManager::kMsgCheatInvoked, nullptr);
 		auto request = Sporepedia::ShopperRequest(this);
 		request.Show(request);
 	}
@@ -29,10 +29,10 @@ void ChangeEditorModel::ParseLine(const ArgScript::Line& line)
 const char* ChangeEditorModel::GetDescription(ArgScript::DescriptionMode mode) const
 {
 	if (mode == ArgScript::DescriptionMode::Basic) {
-		return "This cheat does something.";
+		return "Replaces the current creation in the editor with the one specified.";
 	}
 	else {
-		return "ChangeEditorModel: Elaborate description of what this cheat does.";
+		return "ChangeEditorModel: Opens the Sporepedia when in the editor to input a creation, and swaps the creation currently being edited.\nWorks in the campaign.";
 	}
 }
 

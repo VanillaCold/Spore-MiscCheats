@@ -29,9 +29,11 @@ void SetGameSpeed::ParseLine(const ArgScript::Line& line)
 const char* SetGameSpeed::GetDescription(ArgScript::DescriptionMode mode) const
 {
 	if (mode == ArgScript::DescriptionMode::Basic) {
-		return "This cheat does something.";
+		return "Sets the current game speed. The default speed is 1.0.";
 	}
 	else {
-		return "SetGameSpeed: Elaborate description of what this cheat does.";
+		string str = "SetGameSpeed: Sets the active game speed to the value specified";
+		str += "Usage: setGameSpeed speed";
+		return str.c_str();
 	}
 }
