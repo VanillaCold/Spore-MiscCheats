@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<mod description="Adds a variety of custom cheats to the game." displayName="Vanilla's Misc Cheats" dllsBuild="0.0.0.0" hasCustomInstaller="false" installerSystemVersion="1.0.1.2" isExperimental="true" unique="VanillaColdMiscCheats">
+  <prerequisite>Spore-MiscCheats.dll</prerequisite>
+</mod>
