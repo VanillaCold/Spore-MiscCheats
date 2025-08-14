@@ -32,8 +32,7 @@ const char* SetGameMode::GetDescription(ArgScript::DescriptionMode mode) const
 		return "Sets the current active game-mode.";
 	}
 	else {
-		string str = "SetGameMode: Sets the active game-mode depending on the mode ID (or name) inputted.";
-		str += "Usage: setGameMode [-name/-id] [gameModeName/gameModeID]";
-		return str.c_str();
-	}
+		return "SetGameMode: Sets the active game-mode depending on the mode ID (or name) inputted.\n"
+		"Usage: setGameMode [-name/-id] [gameModeName/gameModeID]";
+		}
 }

@@ -32,8 +32,7 @@ const char* SetGameSpeed::GetDescription(ArgScript::DescriptionMode mode) const
 		return "Sets the current game speed. The default speed is 1.0.";
 	}
 	else {
-		string str = "SetGameSpeed: Sets the active game speed to the value specified";
-		str += "Usage: setGameSpeed speed";
-		return str.c_str();
+		return "SetGameSpeed: Sets the active game speed to the value specified.\n"
+		"Usage: setGameSpeed speed";
 	}
 }
