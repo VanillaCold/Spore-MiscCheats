@@ -8,6 +8,7 @@
 #include "SkipSpaceTutorial.h"
 #include "GiveInventoryItem.h"
 #include "ChangeEditorModel.h"
+#include "PrintPlayerCoordinates.h"
 
 void Initialize()
 {
@@ -19,6 +20,7 @@ void Initialize()
 	CheatManager.AddCheat("skipSpaceTutorial", new SkipSpaceTutorial());
 	CheatManager.AddCheat("giveInventoryItem", new GiveInventoryItem(), true);
 	CheatManager.AddCheat("changeEditorModel", new ChangeEditorModel());
+	CheatManager.AddCheat("getPlayerCoordinates", new PrintPlayerCoordinates());
 }
 
 void Dispose()

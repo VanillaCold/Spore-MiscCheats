@@ -107,6 +107,10 @@
       </SubType>
     </ClInclude>
     <ClInclude Include="GiveItem.h" />
+    <ClInclude Include="PrintPlayerCoordinates.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="RemoveItem.h" />
     <ClInclude Include="SetGameMode.h">
       <SubType>
@@ -145,6 +149,10 @@
       </SubType>
     </ClCompile>
     <ClCompile Include="GiveItem.cpp" />
+    <ClCompile Include="PrintPlayerCoordinates.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="RemoveItem.cpp" />
     <ClCompile Include="SetGameMode.cpp">
       <SubType>
