@@ -15,12 +15,14 @@ void PrintPlayerCoordinates::ParseLine(const ArgScript::Line& line)
 {
 	if (GameNounManager.GetAvatar())
 	{
-		App::ConsolePrintF("Player creature coordinates: %f, %f, %f", GameNounManager.GetAvatar()->GetPosition());
+		auto pos = GameNounManager.GetAvatar()->GetPosition();
+		App::ConsolePrintF("Player creature coordinates: %f, %f, %f", pos.x, pos.y, pos.z);
 	}
 
 	else if (Simulator::GetPlayerUFO())
 	{
-		App::ConsolePrintF("Player UFO coordinates: %f, %f, %f", Simulator::GetPlayerUFO()->GetPosition());
+		auto pos = Simulator::GetPlayerUFO()->GetPosition();
+		App::ConsolePrintF("Player UFO coordinates: %f, %f, %f", pos.x, pos.y, pos.z);
 	}
 
 	else
