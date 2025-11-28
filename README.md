@@ -10,6 +10,7 @@ These cheats in question are as follows:
 - setGameMode - Changes the active game mode to the one specified.
 - setGameSpeed - Sets the current speed of the game, to speed it up or slow it down. Default is 1.0.
 - changeEditorModel - Sets the current creation being edited while in an editor. Works in the campaign too. (Gives Joker badge)
+- getPlayerCoordinates - Prints the player's 3D coordinates to the cheat console.
 
 ## Installation
 As this mod relies on the Spore ModAPI, you must use either the Spore ModAPI Launcher Kit, Spore Mod Loader or the Spore Mod Manager in order to install it.  
